@@ -1,0 +1,8 @@
+model: gpt-4o-mini
+diff_first: true
+cost_cap_usd: 2.0
+
+files:
+  prd: PRD.md
+  tasks: tasks.md
+  tests: tests.md
