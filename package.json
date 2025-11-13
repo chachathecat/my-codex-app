@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "codex": "node tools/codex.mjs",
+    "i18n:ko": "node -r dotenv/config scripts/i18n-ko-fill.mjs locales/en/common.json locales/ko/common.json"
   },
   "keywords": [],
   "author": "",
@@ -12,5 +14,13 @@
   "devDependencies": {
     "@openai/codex": "^0.55.0",
     "dotenv-cli": "^11.0.0"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.19",
+    "dotenv": "^17.2.3",
+    "googleapis": "^165.0.0",
+    "ics": "^3.8.1",
+    "openai": "^6.8.1",
+    "zustand": "^5.0.8"
   }
 }
